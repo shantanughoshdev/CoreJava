@@ -1,7 +1,7 @@
 package com.shan.ConditionLoop;
 
 public class Loop {
-    static void main(String[] args) {
+    static void main() {
 
         // While Loop
 //        int count = 1;
