@@ -1,14 +1,18 @@
 package com.shan.Method;
 
+import java.util.Scanner;
+
 public class StringMethod  {
     public static void main(String[] args) {
-        String result = greet();
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your name");
+        String name = sc.next();
+        String result = greet(name);
         System.out.println(result);
     }
 
-    static String greet(){
-        String greeting = "Hello to my world";
-
-        return greeting;
+    static String greet(String name) {
+        return "Hello " + name;
     }
 }
