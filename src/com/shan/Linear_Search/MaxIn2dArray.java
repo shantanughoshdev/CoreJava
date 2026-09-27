@@ -16,15 +16,12 @@ public class MaxIn2dArray {
 
     }
     static int max(int[][] arr) {
-        int row, col;
+
         int max = Integer.MIN_VALUE;
-        for(row = 0; row< arr.length; row++){
-            for(col = 0; col< arr[row].length; col++){
-                if(arr[row][col] > max){
-                    max = arr[row][col];
-                }
-            }
-        }
+        for (int[] ints : arr)
+            for (int anInt : ints)
+                if (anInt > max)
+                    max = anInt;
         return max;
     }
 }
